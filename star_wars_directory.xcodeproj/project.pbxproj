@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C1E921221DB939620029E111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E921211DB939620029E111 /* AppDelegate.swift */; };
-		C1E921241DB939620029E111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E921231DB939620029E111 /* ViewController.swift */; };
 		C1E921271DB939620029E111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E921251DB939620029E111 /* Main.storyboard */; };
 		C1E9212A1DB939620029E111 /* star_wars_directory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1E921281DB939620029E111 /* star_wars_directory.xcdatamodeld */; };
 		C1E9212C1DB939620029E111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E9212B1DB939620029E111 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		C1E9211E1DB939620029E111 /* star_wars_directory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = star_wars_directory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E921211DB939620029E111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1E921231DB939620029E111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1E921261DB939620029E111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1E921291DB939620029E111 /* star_wars_directory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = star_wars_directory.xcdatamodel; sourceTree = "<group>"; };
 		C1E9212B1DB939620029E111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				C1E921211DB939620029E111 /* AppDelegate.swift */,
-				C1E921231DB939620029E111 /* ViewController.swift */,
 				C1E921251DB939620029E111 /* Main.storyboard */,
 				C1E9212B1DB939620029E111 /* Assets.xcassets */,
 				C1E9212D1DB939620029E111 /* LaunchScreen.storyboard */,
@@ -141,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1E9212A1DB939620029E111 /* star_wars_directory.xcdatamodeld in Sources */,
-				C1E921241DB939620029E111 /* ViewController.swift in Sources */,
 				C1E921221DB939620029E111 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
