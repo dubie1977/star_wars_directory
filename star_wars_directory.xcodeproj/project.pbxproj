@@ -12,6 +12,8 @@
 		C1E9212A1DB939620029E111 /* star_wars_directory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1E921281DB939620029E111 /* star_wars_directory.xcdatamodeld */; };
 		C1E9212C1DB939620029E111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E9212B1DB939620029E111 /* Assets.xcassets */; };
 		C1E9212F1DB939620029E111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E9212D1DB939620029E111 /* LaunchScreen.storyboard */; };
+		C1E9213A1DBABF9A0029E111 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E921391DBABF9A0029E111 /* BaseObject.swift */; };
+		C1E9213C1DBAC92E0029E111 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E9213B1DBAC92E0029E111 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C1E9212B1DB939620029E111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E9212E1DB939620029E111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E921301DB939620029E111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E921391DBABF9A0029E111 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		C1E9213B1DBAC92E0029E111 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		C1E921201DB939620029E111 /* star_wars_directory */ = {
 			isa = PBXGroup;
 			children = (
+				C1E921381DBABCE70029E111 /* Controler */,
+				C1E921371DBABCDF0029E111 /* View */,
+				C1E921361DBABCD10029E111 /* Model */,
 				C1E921211DB939620029E111 /* AppDelegate.swift */,
-				C1E921251DB939620029E111 /* Main.storyboard */,
 				C1E9212B1DB939620029E111 /* Assets.xcassets */,
 				C1E9212D1DB939620029E111 /* LaunchScreen.storyboard */,
 				C1E921301DB939620029E111 /* Info.plist */,
 				C1E921281DB939620029E111 /* star_wars_directory.xcdatamodeld */,
 			);
 			path = star_wars_directory;
+			sourceTree = "<group>";
+		};
+		C1E921361DBABCD10029E111 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1E921391DBABF9A0029E111 /* BaseObject.swift */,
+				C1E9213B1DBAC92E0029E111 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C1E921371DBABCDF0029E111 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1E921251DB939620029E111 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C1E921381DBABCE70029E111 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			files = (
 				C1E9212A1DB939620029E111 /* star_wars_directory.xcdatamodeld in Sources */,
 				C1E921221DB939620029E111 /* AppDelegate.swift in Sources */,
+				C1E9213C1DBAC92E0029E111 /* Person.swift in Sources */,
+				C1E9213A1DBABF9A0029E111 /* BaseObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
