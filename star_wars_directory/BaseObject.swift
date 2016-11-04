@@ -14,7 +14,7 @@ class BaseObject {
     private var _name: String!
     private var _films = ""
     private var _url = ""
-    private var _image: UIImage!
+    private var _image: String!
     private var _backGroundColor: UIColor?
     private var _textColor1: UIColor?
     private var _textColor2: UIColor?
@@ -51,7 +51,12 @@ class BaseObject {
     
     public var image : UIImage {
         get{
-            return _image
+            
+            if let image = UIImage(named: _image){
+                return image
+            } else{
+                return UIImage(named: "star-wars")!
+            }
         }
     }
     
@@ -97,7 +102,7 @@ class BaseObject {
         }
     }
     
-    init(name: String, image: UIImage) {
+    init(name: String, image: String) {
         self._name = name
         self._image = image
     }

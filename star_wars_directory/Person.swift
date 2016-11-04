@@ -10,16 +10,17 @@ import UIKit
 
 class Person: BaseObject{
 
-    private var _height = 0
-    private var _mass = 0
+    private var _height = 0.0
+    private var _mass = 0.0
     private var _hairColor = ""
     private var _skinColor = ""
     private var _eyeColor = ""
     private var _birthYear = ""
     private var _gender = ""
     private var _homeWorld = ""
+    private var _id = 0
     
-    public var height : Int {
+    public var height : Double {
         set(input){
             if (input != 0){
                 _height = input
@@ -30,7 +31,7 @@ class Person: BaseObject{
         }
     }
     
-    public var mass : Int {
+    public var mass : Double {
         set(input){
             if (mass != 0){
                 _mass = input
@@ -107,9 +108,27 @@ class Person: BaseObject{
         }
     }
     
-    override init(name: String, image: UIImage) {
+    override init(name: String, image: String) {
         super.init(name: name, image: image)
         
+    }
+    
+    init(name: String, image: String, height: Double, mass: Double, hairColor: String, skinColor: String, eyeColor: String, birthYear: String, gender: String, id: Int, backGroundColor: UIColor, textColor1: UIColor, textColor2: UIColor){
+        
+        super.init(name: name, image: "")
+        
+        self._mass = mass
+        self._hairColor = hairColor
+        self._skinColor = skinColor
+        self._eyeColor = eyeColor
+        self._birthYear = birthYear
+        self._gender = gender
+        self._id = id
+        
+        self.backGroundColor = backGroundColor
+        self.textColor1 = textColor1
+        self.textColor2 = textColor2
+        self.url = "http://swapi.co/api/people/\(id)/"
     }
 
 }

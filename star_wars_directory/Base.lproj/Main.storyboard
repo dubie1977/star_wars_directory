@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-2387" y="-508"/>
         </scene>
-        <!--View Controller-->
+        <!--SelectorVC-->
         <scene sceneID="keA-Oe-caW">
             <objects>
-                <viewController id="bwD-AX-RdL" sceneMemberID="viewController">
+                <viewController id="bwD-AX-RdL" customClass="SelectorVC" customModule="star_wars_directory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yRD-EM-5b7"/>
                         <viewControllerLayoutGuide type="bottom" id="jBq-E5-3Qj"/>
@@ -30,8 +30,22 @@
                     <view key="view" contentMode="scaleToFill" id="pvi-QH-ne0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x83-cr-bhF">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.35819671436448997" green="1" blue="0.17138206463349148" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="x83-cr-bhF" firstAttribute="leading" secondItem="pvi-QH-ne0" secondAttribute="leading" id="Htd-Ms-1z9"/>
+                            <constraint firstAttribute="trailing" secondItem="x83-cr-bhF" secondAttribute="trailing" id="TX9-KK-a1z"/>
+                            <constraint firstItem="x83-cr-bhF" firstAttribute="top" secondItem="yRD-EM-5b7" secondAttribute="bottom" id="Tqr-fX-AIZ"/>
+                            <constraint firstItem="jBq-E5-3Qj" firstAttribute="top" secondItem="x83-cr-bhF" secondAttribute="bottom" id="h8N-Fg-85R"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="x83-cr-bhF" id="BjE-6X-K29"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvl-SJ-QJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
