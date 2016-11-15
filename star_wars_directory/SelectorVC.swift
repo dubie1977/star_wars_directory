@@ -11,6 +11,9 @@ import UIKit
 class SelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
+    @IBOutlet weak var backBtn: UIBarButtonItem!
     
     enum GroupType {
         case Planet
@@ -30,8 +33,11 @@ class SelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        navigationBar.title = "Catagory"
 
         selectionGroups = Array(Types.values)
+        
         
         selectedGroup = dataEngine.createInitalCharacters()
 
@@ -62,9 +68,26 @@ class SelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedGroupType = GroupType.Character
+        
+        if let _ = selectedGroupType, let group = selectedGroup{
+            navigationBar.title = (group[indexPath.row] as? Person)?.catagory
+        } else{
+            navigationBar.title = "Catagory"
+        }
+        
         tableView.reloadData()
     }
     
-
+    @IBAction func backBtnSelected(_ sender: UIBarButtonItem) {
+        
+        if let _ = selectedGroupType, let _ = selectedGroup{
+            selectedGroupType = nil
+            tableView.reloadData()
+        }
+        
+    }
+    
+    
+    
 
 }

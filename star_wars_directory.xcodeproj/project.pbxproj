@@ -350,6 +350,7 @@
 				C1E921351DB939620029E111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -108,6 +108,13 @@ class Person: BaseObject{
         }
     }
     
+    public var catagory : String{
+        get{
+            return "Person"
+        }
+    }
+    
+    
     override init(name: String, image: String) {
         super.init(name: name, image: image)
         

@@ -12,6 +12,7 @@ class DataEngine{
     
     //init() {}
 
+    
 
     public func createInitalCharacters() -> [BaseObject]{
         var characters = [BaseObject]()
